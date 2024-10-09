@@ -117,3 +117,63 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+/* CV Section */
+.cv-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;  
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section .section-title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.cv-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cv-section .btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cv-section .btn-primary {
+    background-color: #6a82fb;
+    border: none;
+}
+
+.cv-section .btn-primary:hover {
+    background-color: #fc5c7d;
+}
+
+.cv-section .btn-outline-primary {
+    color: #6a82fb;
+    border-color: #6a82fb;
+}
+
+.cv-section .btn-outline-primary:hover {
+    color: white;
+    background-color: #6a82fb;
+    border-color: #6a82fb;
+}
+
+.cv-section i {
+    margin-right: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .cv-section .btn {
+        width: 100%;  
+        margin-bottom: 10px;
+    }
+}
