@@ -6,79 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Portfolio of Bayrem Akka, a passionate software developer specializing in web development, projects, and skills.">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="portfolio.css">
     <title>Bayrem Akka | Portfolio</title>
+   
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <div class="title-section text-center">
-            <h1 class="main-title">Hi There, <span class="highlight">I'm Bayrem Akka</span></h1>
-            <p class="sub-title">I Am Into <span class="highlight">Web Development</span></p>
+        <div class="container">
+            <h1>Hi There, I'm <span class="highlight">Bayrem Akka</span></h1>
+            <p class="lead">A passionate <span class="highlight">Web Developer</span></p>
         </div>
-        
     </header>
 
     <!-- About Me Section -->
     <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>
-            Hello! I am Bayrem Akka, a passionate software developer specializing in web development. I am <span id="age"></span> years old.
-        </p>
-        <p>
-            My journey in tech began with a simple curiosity about how websites are built. Since then, I've had the privilege of contributing to several open-source projects and developing my own applications, where I've honed my skills in frameworks like Angular.
-        </p>
-        <p>
-            I believe in the importance of continuous learning and am always eager to explore new technologies and trends in the software industry. Outside of coding, I enjoy attending tech meetups, sharing knowledge through my blog, and photography.
-        </p>
-        <p>
-            My goal is to create functional and user-friendly applications that not only solve problems but also provide a great user experience. I thrive in collaborative environments and believe that teamwork leads to innovative solutions.
-        </p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p>Hello! I am Bayrem Akka, a software developer specializing in web development. I am <span id="age"></span> years old.</p>
+                    <p>My journey started with curiosity about website development. Since then, I’ve contributed to open-source projects and developed my own applications using frameworks like Angular.</p>
+                    <p>I thrive in collaborative environments and believe in continuous learning. In my free time, I attend tech meetups, share knowledge on my blog, and explore photography.</p>
+                    <p>My aim is to create functional, user-friendly applications with a strong focus on user experience.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3><a class="pr1" href="https://formulaireteachertobe.tiiny.site/" target="_blank" title="View Project 1" aria-label="View Project 1">Project 1</a></h3>
-                <p>A platform designed to help users register for related clubs, gathering contact details and motivations for joining. It uses basic web development tools like HTML and CSS for form submissions and interactions.</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="https://formulaireteachertobe.tiiny.site/" target="_blank">Project 1</a></h3>
+                            <p class="card-text">A platform designed to help users register for clubs, gather contact details, and motivations for joining. Built with HTML and CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill">Python</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Java</div>
-            <div class="skill">Angular</div>
-            <div class="skill">Symfony</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">Git</div>
+    <section id="skills" class="skills-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="text-center">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Angular</span>
+                <span class="skill-badge">Symfony</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">Git</span>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me on any of the following platforms:</p>
-        <div class="contact-list">
-            <div class="contact-item"><a href="mailto:bayremakka2003@gmail.com?subject=Portfolio%20Contact">E-mail</a></div>
-            <div class="contact-item"><a href="https://github.com/Bayrem12" target="_blank">GitHub</a></div>
-            <div class="contact-item"><a href="https://www.linkedin.com/in/bayrem-akka-9126b7290/" target="_blank">LinkedIn</a></div>
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="text-center">Feel free to reach out to me on any of the following platforms:</p>
+            <div class="row">
+                <div class="col-md-4 text-center mb-3">
+                    <a class="contact-item" href="mailto:bayremakka2003@gmail.com?subject=Portfolio%20Contact"><i class="fas fa-envelope"></i> E-mail</a>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <a class="contact-item" href="https://github.com/Bayrem12" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <a class="contact-item" href="https://www.linkedin.com/in/bayrem-akka-9126b7290/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
         </div>
     </section>
-    
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Bayrem Akka. All Rights Reserved.</p>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
