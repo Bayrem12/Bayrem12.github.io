@@ -191,3 +191,14 @@ body {
   animation: animateInSecondary ease-in 1;
   animation-duration: 750ms;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('https://c0.wallpaperflare.com/preview/267/964/934/stars-sky-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional for a parallax effect */
+}
+

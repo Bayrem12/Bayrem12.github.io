@@ -1,0 +1,201 @@
+
+
+
+.solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 100px auto;
+    border-radius: 50%;
+    background-color: #000;
+    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2FmZjF0eGUwbGdpdzlrMzU0aTJraGM0bWx2cGx1a2Fla2dtNnViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JrZHAQT0CxmkPWj9LZ/giphy.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Sun */
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.6);
+    z-index: 10;
+  }
+  
+  /* Planet Base Style */
+  .planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transform-origin: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Planet Names */
+  .planet-name {
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Mercury */
+.mercury {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_mercury.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitMercury 3s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  /* Venus */
+  .venus {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_venus_atmosphere.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitVenus 6s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  /* Earth */
+  .earth {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitEarth 9s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  /* Mars */
+  .mars {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_mars.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitMars 12s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  /* Jupiter */
+  .jupiter {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitJupiter 15s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  /* Saturn */
+  .saturn {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_saturn.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitSaturn 18s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  /* Uranus */
+  .uranus {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_uranus.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitUranus 21s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  /* Neptune */
+  .neptune {
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_neptune.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: orbitNeptune 24s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  
+ 
+  @keyframes orbitMercury {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(100px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(100px);
+    }
+  }
+  @keyframes orbitVenus {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(150px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(150px);
+    }
+  }
+  @keyframes orbitEarth {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(200px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(200px);
+    }
+  }
+  @keyframes orbitMars {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(250px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(250px);
+    }
+  }
+  @keyframes orbitJupiter {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(300px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(300px);
+    }
+  }
+  @keyframes orbitSaturn {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(350px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(350px);
+    }
+  }
+  @keyframes orbitUranus {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(400px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(400px);
+    }
+  }
+  @keyframes orbitNeptune {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(450px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(450px);
+    }
+  }
+  
+  
+  
