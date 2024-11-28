@@ -1,22 +1,21 @@
 
-
-
 .solar-system {
-    position: relative;
-    width: 800px;
-    height: 800px;
-    margin: 100px auto;
-    border-radius: 50%;
-    background-color: #000;
-    background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2FmZjF0eGUwbGdpdzlrMzU0aTJraGM0bWx2cGx1a2Fla2dtNnViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JrZHAQT0CxmkPWj9LZ/giphy.webp');
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    box-shadow: 0 0 60px rgba(255, 255, 255, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: relative;
+  width: 1500px;
+  height: 1000px;
+  margin: -150px auto;
+  background-color: #000;
+  background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2FmZjF0eGUwbGdpdzlrMzU0aTJraGM0bWx2cGx1a2Fla2dtNnViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JrZHAQT0CxmkPWj9LZ/giphy.webp');
+  background-position: center; /* Keeps the background centered */
+  background-attachment: fixed; /* Ensures background stays fixed during scrolling */
+  overflow: hidden;
+  display: flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  transform: scale(0.7); /* Scales the element down to 80% of its original size */
+  transition: transform 0.5s ease; /* Adds smooth transition */
+}
+
   
   /* Sun */
   .sun {
@@ -30,6 +29,7 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 0 30px rgba(255, 204, 0, 0.6);
     z-index: 10;
+
   }
   
   /* Planet Base Style */
@@ -196,6 +196,6 @@
       transform: translate(-50%, -50%) rotate(360deg) translateX(450px);
     }
   }
-  
-  
+
+
   
