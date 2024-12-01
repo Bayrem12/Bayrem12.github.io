@@ -1,32 +1,40 @@
 import { Component } from '@angular/core';
 import { PlanetCardComponent } from '../planet-card/planet-card.component';
+import { ActivatedRoute } from '@angular/router';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-planetspage',
   standalone: true,
-  imports: [PlanetCardComponent],
+  imports: [NgIf],
   templateUrl: './planetspage.component.html',
   styleUrl: './planetspage.component.css'
 })
 export class PlanetspageComponent {
   planets = [
     { 
+      name: 'sun',
+      subtitle: 'planet9', 
+      image: "https://i.pinimg.com/originals/3d/e3/e1/3de3e16d804e38a3415a43d266e4f137.gif", 
+      description: "Mercury is the closest planet to the Sun, and the smallest planet in our solar system - only slightly larger than Earth's Moon."
+     }, 
+    { 
       name: 'Mercury',
       subtitle: 'planet1', 
-      image: "https://static.wikia.nocookie.net/thesolarsystem6361/images/4/41/Mercury.png/revision/latest?cb=20221208101853", 
+      image: "https://i.pinimg.com/originals/42/ba/ed/42baeddb9c19d8e5e363823463425a28.gif", 
       description: "Mercury is the closest planet to the Sun, and the smallest planet in our solar system - only slightly larger than Earth's Moon."
      }, 
     { 
       name: 'Venus', 
       subtitle: 'planet2', 
-      image: "https://i2.pngimg.me/thumb/f/720/comdlpng6972890.jpg", 
+      image: "https://i.pinimg.com/736x/d6/f9/e1/d6f9e18efa63e100e95d6190c55b513e.jpg", 
       description: "Venus is the second planet from the Sun, and the sixth largest planet. It's the hottest planet in our solar system." 
     }, 
     { 
       name: 'Earth', 
       subtitle: 'planet3', 
-      image: "https://p1.hiclipart.com/preview/148/398/515/unrestricted-planet-earth-planet-earth-png-clipart.jpg", 
-      description: "Earth – our home planet – is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things."
+      image: "https://i.pinimg.com/originals/fc/c6/0a/fcc60a6044f5ea1b7d16025b951ca307.gif", 
+      description: "Earth - our home planet - is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things."
     },
     { 
       name: 'Mars', 
@@ -43,7 +51,7 @@ export class PlanetspageComponent {
     { 
       name: 'Saturn', 
       subtitle: 'planet6', 
-      image: "https://i2.pngimg.me/thumb/f/720/m2i8H7m2G6G6Z5A0.jpg", 
+      image: "https://i.pinimg.com/736x/3e/ed/03/3eed03899bfdd291450d13a059c6908a.jpg", 
       description: "Saturn is the sixth planet from the Sun, and the second largest in the solar system. It’s surrounded by beautiful rings." 
     }, 
     { 
@@ -58,5 +66,13 @@ export class PlanetspageComponent {
       description: "Neptune is the eighth, and most distant planet from the Sun. It’s the fourth-largest, and the first planet discovered with math."
     } 
   ];
+  selectedPlanet: any;
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    const planetName = this.route.snapshot.paramMap.get('name');
+    this.selectedPlanet = this.planets.find(planet => planet.name === planetName);
+  }
 
 }

@@ -20,5 +20,6 @@ export const routes: Routes = [
   {
     path:'planetspage',
     component:PlanetspageComponent
-  }
+  },
+  { path: 'planets/:name', component: PlanetspageComponent },
 ];

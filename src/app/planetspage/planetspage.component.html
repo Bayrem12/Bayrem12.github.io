@@ -1,3 +1,7 @@
-<app-planet-card *ngFor="let planet of planets" [planet]="planet"></app-planet-card>
-
+<div class="planet-details" *ngIf="selectedPlanet" [style.backgroundImage]="'url(' + selectedPlanet.image + ')'">
+    <div class="planet-info">
+      <h1>{{ selectedPlanet.name }}</h1>
+      <p>{{ selectedPlanet.description }}</p>
+    </div>
+  </div>
   
