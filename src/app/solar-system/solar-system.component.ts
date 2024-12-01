@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
 import { RouterModule } from '@angular/router';
+=======
+import { Router } from '@angular/router';
+>>>>>>> feature/planet_pages
 
 @Component({
   selector: 'app-solar-system',
@@ -9,5 +13,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './solar-system.component.css'
 })
 export class SolarSystemComponent {
+  constructor(private router: Router) {}
 
+  goToPlanet(planetName: string) {
+    this.router.navigate(['/planets', planetName]);
+  }
 }

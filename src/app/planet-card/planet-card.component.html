@@ -1,0 +1,18 @@
+<div class="cols">
+    <div class="col" ontouchstart="this.classList.toggle('hover');">
+      <div class="container">
+        <div class="front" [style.background-image]="'url(' + planet.image + ')'">
+          <div class="inner">
+            <p>{{ planet.name }}</p>
+            <span>{{ planet.subtitle }}</span>
+          </div>
+        </div>
+        <div class="back">
+          <div class="inner">
+            <p>{{ planet.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
