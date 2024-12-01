@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { RouterModule } from '@angular/router';
-=======
 import { Router } from '@angular/router';
->>>>>>> feature/planet_pages
 
 @Component({
   selector: 'app-solar-system',
