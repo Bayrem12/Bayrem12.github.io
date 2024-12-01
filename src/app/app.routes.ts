@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { isAuthenticatedGuard } from './shared/guards/auth.guard';
+import { PlanetspageComponent } from './planetspage/planetspage.component';
 
 export const routes: Routes = [
   {
@@ -16,4 +17,8 @@ export const routes: Routes = [
     redirectTo: 'auth',
     pathMatch: 'full',
   },
+  {
+    path:'planetspage',
+    component:PlanetspageComponent
+  }
 ];
