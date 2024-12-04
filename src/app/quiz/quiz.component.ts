@@ -1,9 +1,9 @@
-import { Component, effect, inject } from '@angular/core';
-import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
+import { Component, effect, inject, NgModule } from '@angular/core';
+import {  MatToolbarModule } from '@angular/material/toolbar';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../shared/data-access/auth.service';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
+import {  MatIconModule } from '@angular/material/icon';
+import {  MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-quiz',
@@ -27,4 +27,5 @@ export class QuizComponent {
       }
     });
   }
+  
 }
