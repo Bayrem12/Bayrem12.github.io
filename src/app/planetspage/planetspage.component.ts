@@ -27,42 +27,42 @@ export class PlanetspageComponent {
     { 
       name: 'Venus', 
       subtitle: 'planet2', 
-      image: "https://i.pinimg.com/736x/d6/f9/e1/d6f9e18efa63e100e95d6190c55b513e.jpg", 
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Venus_Rotation_Movie.gif/640px-Venus_Rotation_Movie.gif", 
       description: "Venus is the second planet from the Sun, and the sixth largest planet. It's the hottest planet in our solar system." 
     }, 
     { 
       name: 'Earth', 
       subtitle: 'planet3', 
-      image: "https://i.pinimg.com/originals/fc/c6/0a/fcc60a6044f5ea1b7d16025b951ca307.gif", 
+      image: "https://i.pinimg.com/originals/b6/98/f5/b698f5cc2ca55f1e9285696f92bb0ae4.gif", 
       description: "Earth - our home planet - is the third planet from the Sun, and the fifth largest planet. It's the only place we know of inhabited by living things."
     },
     { 
       name: 'Mars', 
       subtitle: 'planet4', 
-      image: "https://i.pinimg.com/originals/f8/d6/88/f8d688b8b4c45922162154b35763e04c.png", 
+      image: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/573633121359165.60c3f5cc6b35e.gif", 
       description: "Mars is the fourth planet from the Sun, and the seventh largest. It’s the only planet we know of inhabited entirely by robots." 
     }, 
     { 
       name: 'Jupiter', 
       subtitle: 'planet5', 
-      image: "https://p7.hiclipart.com/preview/552/71/642/agar-io-jupiter-planet-solar-system-jupiter.jpg", 
+      image: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Voyager_Jupiter_Rotation_Movie.gif", 
       description: "Jupiter is the fifth planet from the Sun, and the largest in the solar system – more than twice as massive as the other planets combined." 
     }, 
     { 
       name: 'Saturn', 
       subtitle: 'planet6', 
-      image: "https://i.pinimg.com/736x/3e/ed/03/3eed03899bfdd291450d13a059c6908a.jpg", 
+      image: "https://i.pinimg.com/originals/06/75/db/0675dbacc17b1713894630c1315c9e63.gif", 
       description: "Saturn is the sixth planet from the Sun, and the second largest in the solar system. It’s surrounded by beautiful rings." 
     }, 
     { 
       name: 'Uranus', 
       subtitle: 'planet7', 
-      image: "https://img.freepik.com/premium-psd/uranus-planet-isolated-transparent-background_220739-145918.jpg", 
+      image: "https://i.gifer.com/origin/e6/e6b88fc1488ae2cdf5758d17b7ac94a5_w200.gif", 
       description: "Uranus is the seventh planet from the Sun, and the third largest planet in our solar system. It appears to spin sideways." 
     }, 
     { name: 'Neptune', 
       subtitle: 'planet8', 
-      image: "https://p7.hiclipart.com/preview/238/252/990/discovery-of-neptune-earth-planet-solar-system-earth.jpg", 
+      image: "https://i.gifer.com/origin/a7/a729f99ef86986a2b1805b1be72c41c4_w200.gif", 
       description: "Neptune is the eighth, and most distant planet from the Sun. It’s the fourth-largest, and the first planet discovered with math."
     } 
   ];
