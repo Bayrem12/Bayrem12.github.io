@@ -1,34 +1,24 @@
+/* Container setup for the main layout */
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-
-  mat-toolbar {
-    /* Space-like gradient background */
-    background: linear-gradient(45deg, #090909, #060708);
-    
-    /* Add a starry effect using a repeating background image */
-    background-size: cover;
-
-    /* Slight transparency to blend with the theme */
-    opacity: 0.9;
-
-    /* Text styling */
-    color: white;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-
-    /* Subtle glowing effect */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-
-    /* Border to give a futuristic look */
-    border-bottom: 2px solid #ffeb3b;
-
-    /* Adjust padding */
-    padding: 10px 20px;
-
-    /* Rounded corners for a modern touch */
-    border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #0a0a0a; /* Dark background for the space theme */
 }
+
+/* Styling for mat-toolbar with a space-like effect */
+mat-toolbar {
+  background: linear-gradient(45deg, #090909, #060708); /* Space-like gradient */
+  background-size: cover;
+  opacity: 0.95; /* Slight transparency */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Glowing effect */
+  border-bottom: 2px solid #ffeb3b; /* Futuristic yellow border */
+  padding: 10px 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
