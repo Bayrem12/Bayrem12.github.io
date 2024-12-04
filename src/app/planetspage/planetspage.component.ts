@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { PlanetCardComponent } from '../planet-card/planet-card.component';
+
 import { ActivatedRoute } from '@angular/router';
 import { NgIf } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-planetspage',
