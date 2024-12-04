@@ -1,9 +1,14 @@
 <div class="container">
-    <mat-toolbar >
-      <span class="spacer"></span>
-      <button mat-icon-button (click)="authService.logout()">
-        <mat-icon>logout</mat-icon>
-      </button>
-    </mat-toolbar>
+  <mat-toolbar>
+    <button mat-button [routerLink]="['/home']">Home</button>
+    <button mat-button [routerLink]="['/quiz']">Quiz</button>
     
-  </div>
+    <span class="spacer"></span>
+    
+    <button mat-icon-button (click)="authService.logout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <app-solar-system></app-solar-system>
+</div>

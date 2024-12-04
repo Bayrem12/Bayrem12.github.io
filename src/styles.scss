@@ -191,3 +191,10 @@ body {
   animation: animateInSecondary ease-in 1;
   animation-duration: 750ms;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2FmZjF0eGUwbGdpdzlrMzU0aTJraGM0bWx2cGx1a2Fla2dtNnViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JrZHAQT0CxmkPWj9LZ/giphy.webp');
+  /* Optional for a parallax effect */
+}
+
