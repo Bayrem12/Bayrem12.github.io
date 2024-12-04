@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { PlanetCardComponent } from '../planet-card/planet-card.component';
+
 import { ActivatedRoute } from '@angular/router';
 import { NgIf } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-planetspage',
@@ -51,18 +53,18 @@ export class PlanetspageComponent {
     { 
       name: 'Saturn', 
       subtitle: 'planet6', 
-      image: "https://i.pinimg.com/originals/06/75/db/0675dbacc17b1713894630c1315c9e63.gif", 
+      image: "https://media.tenor.com/X41MtjA-OJUAAAAM/mercury-space.gif", 
       description: "Saturn is the sixth planet from the Sun, and the second largest in the solar system. It’s surrounded by beautiful rings." 
     }, 
     { 
       name: 'Uranus', 
       subtitle: 'planet7', 
-      image: "https://i.gifer.com/origin/e6/e6b88fc1488ae2cdf5758d17b7ac94a5_w200.gif", 
+      image: "https://i.gifer.com/PAx.gif", 
       description: "Uranus is the seventh planet from the Sun, and the third largest planet in our solar system. It appears to spin sideways." 
     }, 
     { name: 'Neptune', 
       subtitle: 'planet8', 
-      image: "https://i.gifer.com/origin/a7/a729f99ef86986a2b1805b1be72c41c4_w200.gif", 
+      image: "https://i.gifer.com/origin/e6/e6b88fc1488ae2cdf5758d17b7ac94a5_w200.gif", 
       description: "Neptune is the eighth, and most distant planet from the Sun. It’s the fourth-largest, and the first planet discovered with math."
     } 
   ];
