@@ -5,6 +5,14 @@ import { AuthService } from '../shared/data-access/auth.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { NgFor, NgIf } from '@angular/common';
+interface Quiz {
+  title: string;
+  questions: {
+    question: string;
+    options: string[];
+    correctAnswer: number;
+  }[];
+}
 
 @Component({
   selector: 'app-quiz',
