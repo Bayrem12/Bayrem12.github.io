@@ -3,7 +3,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AuthService } from '../shared/data-access/auth.service';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { SolarSystemComponent } from "../solar-system/solar-system.component";
 
 @Component({
@@ -15,7 +15,8 @@ import { SolarSystemComponent } from "../solar-system/solar-system.component";
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    SolarSystemComponent
+    SolarSystemComponent,
+    RouterModule
 ],
   
 })

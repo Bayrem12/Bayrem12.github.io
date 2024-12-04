@@ -1,4 +1,3 @@
-
 .solar-system {
   position: relative;
   width: 1500px;
@@ -196,6 +195,3 @@
       transform: translate(-50%, -50%) rotate(360deg) translateX(450px);
     }
   }
-
-
-  
