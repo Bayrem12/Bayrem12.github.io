@@ -4,6 +4,7 @@ import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../shared/data-access/auth.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-quiz',
@@ -12,7 +13,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatToolbarModule,
     RouterLink,
     MatIconModule,
-    MatButtonModule],
+    MatButtonModule,
+    NgIf,
+    NgFor
+  ],
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.css']
 })
