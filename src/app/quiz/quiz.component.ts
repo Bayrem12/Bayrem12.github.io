@@ -14,8 +14,8 @@ import { NgFor, NgIf } from '@angular/common';
     RouterLink,
     MatIconModule,
     MatButtonModule,
-    NgIf,
-    NgFor
+    NgFor,
+    NgIf
   ],
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.css']
