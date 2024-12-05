@@ -53,7 +53,7 @@ export class PlanetspageComponent {
     { 
       name: 'Saturn', 
       subtitle: 'planet6', 
-      image: "https://media.tenor.com/X41MtjA-OJUAAAAM/mercury-space.gif", 
+      image: "https://th.bing.com/th/id/OIP.OhddlhNvpFL4d7UK_RVWFwHaHa?rs=1&pid=ImgDetMain", 
       description: "Saturn is the sixth planet from the Sun and the second largest planet in our solar system. Adorned with a dazzling system of icy rings, Saturn is unique among the planets.Saturn is a massive ball made mostly of hydrogen and helium. The farthest planet from Earth discovered by the unaided human eye, Saturn has been known since ancient times. The planet is named for the Roman god of agriculture and wealth, who was also the father of Jupiter." 
     }, 
     { 
