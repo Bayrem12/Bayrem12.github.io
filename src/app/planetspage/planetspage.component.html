@@ -1,8 +1,22 @@
 
-<div class="planet-details" *ngIf="selectedPlanet" [style.backgroundImage]="'url(' + selectedPlanet.image + ')'">
+<div class="container">
+  <mat-toolbar>
+    <button mat-button [routerLink]="['/home']">Home</button>
+    <button mat-button [routerLink]="['/quiz']">Quiz</button>
+    
+    <span class="spacer"></span>
+    
+    <button mat-icon-button (click)="authService.logout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="planet-details" *ngIf="selectedPlanet" [style.backgroundImage]="'url(' + selectedPlanet.image + ')'">
     <div class="planet-info">
       
       <h1>{{ selectedPlanet.name }}</h1>
       <p>{{ selectedPlanet.description }}</p>
     </div>
   </div>
+
+</div>
+
