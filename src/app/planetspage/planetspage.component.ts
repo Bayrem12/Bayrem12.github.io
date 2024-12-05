@@ -1,18 +1,24 @@
-import { Component } from '@angular/core';
+import { Component , effect, inject } from '@angular/core';
 
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { NgIf } from '@angular/common';
-
+import { SolarSystemComponent } from '../solar-system/solar-system.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { AuthService } from '../shared/data-access/auth.service';
 
 
 @Component({
   selector: 'app-planetspage',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, MatToolbarModule, MatButtonModule,MatIconModule,RouterLink],
   templateUrl: './planetspage.component.html',
   styleUrl: './planetspage.component.css'
 })
 export class PlanetspageComponent {
+  authService = inject(AuthService);
+  private router = inject(Router);
   planets = [
     { 
       name: 'sun',
@@ -71,7 +77,11 @@ export class PlanetspageComponent {
   ];
   selectedPlanet: any;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute) {effect(() => {
+    if (!this.authService.user()) {
+      this.router.navigate(['auth', 'login']);
+    }
+  });}
 
   ngOnInit() {
     const planetName = this.route.snapshot.paramMap.get('name');
