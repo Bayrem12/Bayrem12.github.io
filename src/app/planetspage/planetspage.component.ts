@@ -12,7 +12,7 @@ import { AuthService } from '../shared/data-access/auth.service';
 @Component({
   selector: 'app-planetspage',
   standalone: true,
-  imports: [NgIf,SolarSystemComponent, MatToolbarModule, MatButtonModule,MatIconModule,RouterLink],
+  imports: [NgIf, MatToolbarModule, MatButtonModule,MatIconModule,RouterLink],
   templateUrl: './planetspage.component.html',
   styleUrl: './planetspage.component.css'
 })
