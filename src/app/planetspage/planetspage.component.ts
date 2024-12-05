@@ -51,6 +51,7 @@ export class PlanetspageComponent {
       description: "Jupiter is a world of extremes.Jupiter is the largest planet in our solar system. If Jupiter was a hollow shell, 1,000 Earths could fit inside. Jupiter also is the oldest planet, forming from the dust and gases left over from the Sun's formation 4.5 billion years ago. But it has the shortest day in the solar system, taking only 10.5 hours to spin around once on its axis." 
     }, 
     { 
+      
       name: 'Saturn', 
       subtitle: 'planet6', 
       image: "https://th.bing.com/th/id/OIP.OhddlhNvpFL4d7UK_RVWFwHaHa?rs=1&pid=ImgDetMain", 
