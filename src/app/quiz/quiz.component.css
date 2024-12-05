@@ -1,11 +1,60 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
 
-  mat-toolbar {
+
+/* Styling for the quiz container */
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 50px;
+  text-align: center;
+  background: #2d2d2d; /* Dark background for quiz container */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+/* Styling for the main quiz header */
+h1 {
+  color: #4a90e2; /* Blue color for the title */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Quiz selector button styling */
+.quiz-selector {
+  margin-bottom: 20px;
+}
+
+.quiz-selector button {
+  margin: 10px;
+  padding: 12px 25px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-selector button:hover {
+  background-color: #357abd; /* Darker blue for hover effect */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ffeb3b; /* Yellow color for section titles */
+  font-size: 1.8em;
+}
+
+label {
+  display: block;
+  margin: 12px 0;
+  font-size: 1.1em;
+  color: #fff; /* White text for labels */
+}
+
+
+
+mat-toolbar {
     /* Space-like gradient background */
     background: linear-gradient(45deg, #090909, #060708);
     
@@ -32,5 +81,3 @@
     /* Rounded corners for a modern touch */
     border-radius: 0px 0px 10px 10px;
 }
-
-

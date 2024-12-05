@@ -1,12 +1,43 @@
-<div class="container">
     <mat-toolbar>
       <button mat-button [routerLink]="['/home']">Home</button>
       <button mat-button [routerLink]="['/quiz']">Quiz</button>
-      
       <span class="spacer"></span>
-      
       <button mat-icon-button (click)="authService.logout()">
         <mat-icon>logout</mat-icon>
       </button>
     </mat-toolbar>
+<div class="quiz-container">
+  <h1>{{ currentQuiz.title }}</h1>
+
+  <!-- Quiz Selector -->
+  <div class="quiz-selector">
+    <button (click)="switchQuiz('milkyWay')">Milky Way Quiz</button>
+    <button (click)="switchQuiz('plants')">Plant Quiz</button>
+  </div>
+
+  <!-- Quiz Content -->
+  <div *ngIf="!showResults">
+    <h2>{{ currentQuiz.questions[currentQuestionIndex].question }}</h2>
+    <div *ngFor="let option of currentQuiz.questions[currentQuestionIndex].options; index as i">
+      <label>
+        <input 
+          type="radio" 
+          name="answer" 
+          [value]="i" 
+          (change)="selectAnswer(i)" 
+          [checked]="userAnswer === i" 
+        />
+        {{ option }}
+      </label>
+    </div>
+    <button (click)="submitAnswer()" [disabled]="userAnswer === null">Submit</button>
+  </div>
+
+  <!-- Results -->
+  <div *ngIf="showResults">
+    <h2>Quiz Completed!</h2>
+    <p>Your Score: {{ score }} / {{ currentQuiz.questions.length }}</p>
+    <button (click)="restartQuiz()">Restart Quiz</button>
+  </div>
 </div>
+
