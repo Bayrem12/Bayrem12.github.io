@@ -16,7 +16,7 @@ export class PlanetspageComponent {
   planets = [
     { 
       name: 'sun',
-      subtitle: 'planet9', 
+      subtitle: 'planet0', 
       image: "https://i.pinimg.com/originals/3d/e3/e1/3de3e16d804e38a3415a43d266e4f137.gif", 
       description: " The Sun is a yellow dwarf star, a hot ball of glowing gases at the heart of our solar system.Its gravity holds the solar system together, keeping everything – from the biggest planets to the smallest particles of debris – in its orbit. The connection and interactions between the Sun and Earth drive the seasons, ocean currents, weather, climate, radiation belts and auroras. Though it is special to us, there are billions of stars like our Sun scattered across the Milky Way galaxy.The Sun has many names in many cultures. The Latin word for Sun is “sol,” which is the main adjective for all things Sun-related: solar."
      }, 
