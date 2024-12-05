@@ -16,7 +16,7 @@ export class PlanetspageComponent {
   planets = [
     { 
       name: 'sun',
-      subtitle: 'planet9', 
+      subtitle: 'planet0', 
       image: "https://i.pinimg.com/originals/3d/e3/e1/3de3e16d804e38a3415a43d266e4f137.gif", 
       description: " The Sun is a yellow dwarf star, a hot ball of glowing gases at the heart of our solar system.Its gravity holds the solar system together, keeping everything – from the biggest planets to the smallest particles of debris – in its orbit. The connection and interactions between the Sun and Earth drive the seasons, ocean currents, weather, climate, radiation belts and auroras. Though it is special to us, there are billions of stars like our Sun scattered across the Milky Way galaxy.The Sun has many names in many cultures. The Latin word for Sun is “sol,” which is the main adjective for all things Sun-related: solar."
      }, 
@@ -51,9 +51,10 @@ export class PlanetspageComponent {
       description: "Jupiter is a world of extremes.Jupiter is the largest planet in our solar system. If Jupiter was a hollow shell, 1,000 Earths could fit inside. Jupiter also is the oldest planet, forming from the dust and gases left over from the Sun's formation 4.5 billion years ago. But it has the shortest day in the solar system, taking only 10.5 hours to spin around once on its axis." 
     }, 
     { 
+      
       name: 'Saturn', 
       subtitle: 'planet6', 
-      image: "https://media.tenor.com/X41MtjA-OJUAAAAM/mercury-space.gif", 
+      image: "https://th.bing.com/th/id/OIP.OhddlhNvpFL4d7UK_RVWFwHaHa?rs=1&pid=ImgDetMain", 
       description: "Saturn is the sixth planet from the Sun and the second largest planet in our solar system. Adorned with a dazzling system of icy rings, Saturn is unique among the planets.Saturn is a massive ball made mostly of hydrogen and helium. The farthest planet from Earth discovered by the unaided human eye, Saturn has been known since ancient times. The planet is named for the Roman god of agriculture and wealth, who was also the father of Jupiter." 
     }, 
     { 
